@@ -7,7 +7,7 @@ app.get('/', function(req, res) {
 });
 
 
-var port = process.env.Port || 5462;
+var port = process.env.PORT || 5462;
 
 
 var server = app.listen(port, function() {
