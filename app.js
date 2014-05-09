@@ -7,9 +7,9 @@ app.get('/', function(req, res) {
 });
 
 
+var port = process.env.Port || 5462;
 
 
-
-var server = app.listen(5462, function() {
+var server = app.listen(port, function() {
 	console.log('Express server listening on port ' + server.address().port);
 });
